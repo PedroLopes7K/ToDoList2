@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+form {
+  display: flex;
+  width: 300px;
+  height: 50px;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 25px 0;
+}
+.contain input {
+  width: 180px;
+  height: 30px;
+  border: 2px solid rgb(29, 29, 56);
+  border-radius: 3px;
+}
+
+.contain input::placeholder {
+  text-align: center;
+}
+
+.contain button {
+  height: 35px;
+  border: none;
+  background: blue;
+  color: white;
+  border-radius: 4px;
+}
+
+ul {
+  list-style: none;
+  width: 250px;
+}
+ul li {
+  margin: 25px 0;
+  height: 40px;
+  color: black;
+  font-size: 25px;
+}
+
+.delete {
+  margin-left: 20px;
+  background: red;
+  color: #fff;
+}
