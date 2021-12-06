@@ -38,24 +38,24 @@ function CriarTarefa(descricaoTarefa) {
   input.value = ''
 }
 
-function CreatToDo(x) {
-  // ADD TAREFA
-  let listItem = `<li>${x} <button class="delete">Delete</button></li>`
-  tarefas.insertAdjacentHTML('beforeend', listItem)
+// function CreatToDo(x) {
+//   // ADD TAREFA
+//   let listItem = `<li>${x} <button class="delete">Delete</button></li>`
+//   tarefas.insertAdjacentHTML('beforeend', listItem)
 
-  //LOCALSTORAGR
-  if (dados == null) {
-    localStorage.setItem('nomeTarefa', '[]')
-    dados = []
-  }
+//   //LOCALSTORAGR
+//   if (dados == null) {
+//     localStorage.setItem('nomeTarefa', '[]')
+//     dados = []
+//   }
 
-  let regTarefa = {
-    tarefa: input.value
-  }
-  dados.push(regTarefa)
-  localStorage.setItem('nomeTarefa', JSON.stringify(dados))
-  input.value = ''
-}
+//   let regTarefa = {
+//     tarefa: input.value
+//   }
+//   dados.push(regTarefa)
+//   localStorage.setItem('nomeTarefa', JSON.stringify(dados))
+//   input.value = ''
+// }
 
 function deleteItem(eventClick) {
   eventClick.target.parentElement.remove()
